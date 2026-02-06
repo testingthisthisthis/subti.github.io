@@ -1,69 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your App Name</title>
-  <meta name="description" content="A short description of your app and what it does." />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subti</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: #fff;
       color: #111;
-      background: #fff;
-      line-height: 1.6;
     }
 
     header {
-      padding: 80px 20px;
-      text-align: center;
-      max-width: 900px;
-      margin: auto;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 2px solid #004080;
+    }
+
+    header img {
+      height: 50px;
+      margin-right: 15px;
     }
 
     header h1 {
-      font-size: 3rem;
-      margin-bottom: 16px;
+      font-size: 2rem;
+      color: #004080;
+      margin: 0;
     }
 
-    header p {
-      font-size: 1.25rem;
-      color: #555;
-      margin-bottom: 32px;
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
-    .cta {
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .buttons a {
       display: inline-block;
-      padding: 14px 28px;
-      background: #000;
-      color: #fff;
       text-decoration: none;
+      color: white;
+      padding: 14px 28px;
+      margin-right: 10px;
       border-radius: 6px;
-      font-weight: 600;
+      font-weight: bold;
+    }
+
+    .download {
+      background-color: #0078D7;
+    }
+
+    .buy {
+      background-color: #4CAF50;
+    }
+
+    .hero img {
+      max-width: 300px;
+      margin-top: 20px;
     }
 
     section {
       max-width: 900px;
-      margin: 60px auto;
+      margin: 40px auto;
       padding: 0 20px;
     }
 
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-    }
-
-    .feature {
-      border: 1px solid #eee;
-      border-radius: 8px;
-      padding: 20px;
+    section h3 {
+      color: #004080;
+      margin-bottom: 10px;
     }
 
     footer {
       text-align: center;
-      padding: 40px 20px;
+      padding: 30px 20px;
+      border-top: 1px solid #ccc;
       color: #777;
       font-size: 0.9rem;
     }
@@ -72,31 +100,35 @@
 <body>
 
   <header>
-    <h1>Your App Name</h1>
-    <p>A clear one-line explanation of what your app does and why it’s useful.</p>
-    <a class="cta" href="#">Download for macOS & Windows</a>
+    <img src="logo.png" alt="Subti Logo">
+    <h1>Subti</h1>
   </header>
 
-  <section>
-    <h2>Why Your App?</h2>
-    <div class="features">
-      <div class="feature">
-        <h3>Feature One</h3>
-        <p>Short description of the benefit.</p>
-      </div>
-      <div class="feature">
-        <h3>Feature Two</h3>
-        <p>Short description of the benefit.</p>
-      </div>
-      <div class="feature">
-        <h3>Feature Three</h3>
-        <p>Short description of the benefit.</p>
+  <div class="hero">
+    <div class="hero-text">
+      <h2>Manage subtitles for all your videos easily</h2>
+      <p>Subti automatically generates and syncs subtitles across multiple platforms. Fast, accurate, and cross-platform.</p>
+      <div class="buttons">
+        <a class="download" href="#">Download for macOS & Windows</a>
+        <a class="buy" href="#">Buy Subti</a>
       </div>
     </div>
+    <img src="screenshot.png" alt="App Screenshot">
+  </div>
+
+  <section>
+    <h3>Key Features</h3>
+    <ul>
+      <li>Automatic subtitle generation</li>
+      <li>Supports multiple video formats</li>
+      <li>Cross-platform: macOS & Windows</li>
+      <li>Easy export in multiple formats</li>
+      <li>Lightweight and fast</li>
+    </ul>
   </section>
 
   <footer>
-    © 2026 Your App Name. All rights reserved.
+    © 2026 Subti. All rights reserved.
   </footer>
 
 </body>
